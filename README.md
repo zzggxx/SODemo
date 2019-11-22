@@ -1,4 +1,4 @@
-# 关于SO库的生成
+# 关于SO库的生成(使用CMake编译方式)
 
 [相关的文章](https://blog.csdn.net/mayohn/article/details/82152360#android-studio-30-jni%E5%BC%80%E5%8F%91%E7%94%9F%E6%88%90so%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B),可以观看下边的释义理解.
 
@@ -36,3 +36,5 @@
 	其中就是两项内容:add_library 和 target_link_libraries,就将其中的名称(native-lib)修改掉,文件引用修改掉,target_link_libraries中的名称修改掉即可
 
 6. Rebuild project --> run.
+
+7. 生成的so库路径:build -> intermediates -> cmake -> debug -> obj -> 直接复制即可
