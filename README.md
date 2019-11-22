@@ -38,3 +38,7 @@
 6. Rebuild project --> run.
 
 7. 生成的so库路径:build -> intermediates -> cmake -> debug -> obj -> 直接复制即可
+
+## 串口的so库生成方式 
+
+将 android-serialport-api --> project -> jni -> SerialPort.c 和 SerialPort.h拷贝到一个新project中,然后按照指定修改CMakeList文件即可,run就可以生成,参照AppTest即可.
