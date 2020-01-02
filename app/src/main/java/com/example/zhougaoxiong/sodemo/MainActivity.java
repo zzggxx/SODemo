@@ -1,7 +1,6 @@
 package com.example.zhougaoxiong.sodemo;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Example of a call to a native method
-        TextView tv = (TextView) findViewById(R.id.sample_text);
-        tv.setText(String.valueOf(new Hello().getAdd(1, 100)));
+//        TextView tv = (TextView) findViewById(R.id.sample_text);
+//        tv.setText(String.valueOf(new Hello().getAdd(1, 100)));
     }
 }
