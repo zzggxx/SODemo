@@ -1,1 +1,2 @@
+include ':serialport'
 include ':app', ':TestSoApp'
