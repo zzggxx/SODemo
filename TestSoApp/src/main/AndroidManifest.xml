@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.snbc.testapp">
+    package="com.snbc.testapp"
+    android:sharedUserId="android.uid.system"
+    >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!--    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>-->
 
     <application
         android:allowBackup="true"

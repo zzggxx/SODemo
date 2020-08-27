@@ -1,2 +1,2 @@
 include ':serialport'
-include ':app', ':TestSoApp'
+include ':app', ':TestSoApp','ctoso'

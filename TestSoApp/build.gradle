@@ -16,9 +16,28 @@ android {
     }
 
     buildTypes {
+        debug {
+            jniDebuggable true
+            jniDebuggable = true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../signApktest/platform.keystore")
+            keyAlias 'platform'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+        debug {
+            storeFile file("../signApk/rk3399platform.keystore")
+            keyAlias 'platform'
+            keyPassword 'android'
+            storePassword 'android'
         }
     }
 

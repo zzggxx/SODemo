@@ -15,6 +15,12 @@ extern "C" {
 JNIEXPORT jint JNICALL Java_com_snbc_ctoso_Memtest_simpleMemtest
   (JNIEnv *, jclass);
 
+JNIEXPORT jstring JNICALL Java_com_snbc_ctoso_Memtest_rtcGetTime
+        (JNIEnv *, jclass, jstring);
+
+JNIEXPORT jint JNICALL Java_com_snbc_ctoso_Memtest_rtcSetTime
+        (JNIEnv *, jclass, jstring, jint);
+
 #ifdef __cplusplus
 }
 #endif

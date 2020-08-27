@@ -10,5 +10,7 @@ public class Memtest {
     static {
         System.loadLibrary("simplememtest");
     }
-    public static native int simpleMemtest();
+    public native int simpleMemtest();
+    public native int rtcGetTime(String s);
+    public native int rtcSetTime(String s,int wday);
 }
