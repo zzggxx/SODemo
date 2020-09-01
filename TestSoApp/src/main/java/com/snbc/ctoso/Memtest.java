@@ -11,6 +11,6 @@ public class Memtest {
         System.loadLibrary("simplememtest");
     }
     public native int simpleMemtest();
-    public native int rtcGetTime(String s);
+    public native String rtcGetTime(String s);
     public native int rtcSetTime(String s,int wday);
 }

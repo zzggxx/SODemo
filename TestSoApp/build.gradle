@@ -35,6 +35,7 @@ android {
         }
         debug {
             storeFile file("../signApk/rk3399platform.keystore")
+//            storeFile file("../signApk/imx6platformnew.keystore")
             keyAlias 'platform'
             keyPassword 'android'
             storePassword 'android'

@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn1:
                 Memtest memtest = new Memtest();
                 String[] s1 = new String[]{"2020-08-19 13:40:15","2020-08-19 13:50:15","2020-08-19 13:55:15"};
-                int i1 = memtest.rtcGetTime(s1[0]);
+                String i1 = memtest.rtcGetTime(s1[0]);
                 Log.i(TAG, "onCreate: i1 " + i1);
 
                 for (int i = 0; i < s1.length; i++) {

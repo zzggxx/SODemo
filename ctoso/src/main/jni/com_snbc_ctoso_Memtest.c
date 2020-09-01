@@ -14,9 +14,16 @@ JNIEXPORT jstring JNICALL Java_com_snbc_ctoso_Memtest_rtcGetTime
 
     char* str = (char*)(*env)->GetStringUTFChars(env,timestr, NULL);
 
-    rtc_get_time(str);
+    int ret = rtc_get_time(str);
 
-    return (*env)->NewStringUTF(env,str);
+    if(ret>0)
+    {
+        return (*env)->NewStringUTF(env,str);
+    } else {
+        (*env)->ReleaseStringUTFChars(env,timestr,str);
+        return NULL;
+    }
+
 }
 
 JNIEXPORT jint JNICALL Java_com_snbc_ctoso_Memtest_rtcSetTime
